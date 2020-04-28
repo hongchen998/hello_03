@@ -25,8 +25,10 @@
         <module name="changgou-service-seckill-api" />
         <module name="changgou-service-user" />
         <module name="changgou-service-user-api" />
+        <module name="changgou-service-userCenter-api" />
         <module name="changgou-user-oauth" />
         <module name="changgou-web-search" />
+        <module name="changgou-web-userCenter" />
         <module name="code-template" />
         <module name="fescar-api" />
         <module name="fescar-business" />
