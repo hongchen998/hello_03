@@ -5,21 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/changgou-service/changgou-service-search/src/main/java/com/changgou/search/service/impl/SkuInfoServiceImpl.java" line="234" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9973f41b-4174-4a4c-a955-6a9aac7036b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/changgou-web/changgou-web-userCenter/src/main/java/com/changgou/userCenter/UserCenterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-parent.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service-api/changgou-service-content-api/changgou-service-content-api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service-api/changgou-service-order-api/changgou-service-order-api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-service-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-canal/changgou-service-canal.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-content/changgou-service-content.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-service/changgou-service-file/changgou-service-file.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-web/changgou-web.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-web/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9973f41b-4174-4a4c-a955-6a9aac7036b0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/changgou-eureka/target/" />
@@ -803,7 +789,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588065602989" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588066196697" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1104,7 +1090,7 @@
       <workItem from="1587983859515" duration="607000" />
       <workItem from="1588037445364" duration="1110000" />
       <workItem from="1588041842156" duration="2235000" />
-      <workItem from="1588054760786" duration="9032000" />
+      <workItem from="1588054760786" duration="9444000" />
     </task>
     <servers />
   </component>
@@ -1141,7 +1127,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322926000" />
+    <option name="totallyTimeSpent" value="323338000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

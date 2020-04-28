@@ -1,0 +1,27 @@
+server:
+  port: 18091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: userCenter-web
+  main:
+    allow-bean-definition-overriding: true
+ribbon:
+  ReadTimeout: 300000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
