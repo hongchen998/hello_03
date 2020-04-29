@@ -49,6 +49,18 @@ public class OrderServiceImpl implements OrderService {
     @Autowired(required = false)
     private UserFeign userFeign;
 
+    /**
+     * @param username
+     * @return java.util.List<com.changgou.order.pojo.Order>
+     * @author hongchen
+     * @Description 通过用户名查找订单列表
+     * @Date 12:09 2020/4/29
+     **/
+    @Override
+    public List<Order> findByUsername(String username) {
+        List<Order> list = orderMapper.findByUsername(username);
+        return list;
+    }
 
     /**
      * @param orderId
@@ -95,18 +107,16 @@ public class OrderServiceImpl implements OrderService {
             // 从数据库中查询订单
             order = orderMapper.selectByPrimaryKey(orderId);
         }
-
-        //更新订单状态
-        order.setTransactionId(transactionId);   // 交易流水号
-        order.setUpdateTime(new Date());         // 订单的更新日期
-        order.setPayStatus("1");                // 支付状态：已支付
-        order.setPayTime(new Date());           // 支付完成日期
-
-        orderMapper.updateByPrimaryKeySelective(order);
-
-        //更新完成后，删除redis中订单信息
-        redisTemplate.boundHashOps("Order").delete(orderId);
-
+        if (order != null) {
+            //更新订单状态
+            order.setTransactionId(transactionId);   // 交易流水号
+            order.setUpdateTime(new Date());         // 订单的更新日期
+            order.setPayStatus("1");                // 支付状态：已支付
+            order.setPayTime(new Date());           // 支付完成日期
+            orderMapper.updateByPrimaryKeySelective(order);
+            //更新完成后，删除redis中订单信息
+            redisTemplate.boundHashOps("Order").delete(orderId);
+        }
     }
 
     /**
@@ -354,7 +364,7 @@ public class OrderServiceImpl implements OrderService {
 
         //删除购物车 应该删除已下单的商品
         //redisTemplate.boundHashOps("cart_" + order.getUsername()).delete(sku_id);
-        redisTemplate.delete("cart_"+order.getUsername());
+        redisTemplate.delete("cart_" + order.getUsername());
 
     }
 

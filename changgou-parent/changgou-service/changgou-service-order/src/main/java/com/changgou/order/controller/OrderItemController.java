@@ -23,6 +23,19 @@ public class OrderItemController {
     @Autowired
     private OrderItemService orderItemService;
 
+    /**
+     * @param orderId
+     * @return java.util.List<com.changgou.order.pojo.OrderItem>
+     * @author hongchen
+     * @Description 根据订单id查询订单详情列表
+     * @Date 12:33 2020/4/29
+     **/
+    @GetMapping("/findByOrderId/{orderId}")
+    public Result<List<OrderItem>> findByOrderId(@PathVariable(value = "orderId") String orderId) {
+        List<OrderItem> orderItemList = orderItemService.findByOrderId(orderId);
+        return new Result(true,StatusCode.OK,"查询订单详情列表成功",orderItemList);
+    }
+
     /***
      * OrderItem分页条件搜索实现
      * @param orderItem

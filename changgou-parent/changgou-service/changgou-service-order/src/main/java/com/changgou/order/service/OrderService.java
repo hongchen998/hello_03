@@ -12,6 +12,14 @@ import java.util.List;
  *****/
 public interface OrderService {
     /**
+     * @author hongchen
+     * @Description 通过用户名查找订单列表
+     * @Date 12:09 2020/4/29
+     * @param username
+     * @return java.util.List<com.changgou.order.pojo.Order>
+     **/
+    List<Order> findByUsername(String username);
+    /**
      * @param orderId
      * @return void
      * @author hongchen

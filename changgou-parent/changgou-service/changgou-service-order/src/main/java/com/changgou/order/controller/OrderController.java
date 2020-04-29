@@ -28,6 +28,19 @@ public class OrderController {
     @Autowired
     private TokenDecode tokenDecode;
 
+    /**
+     * @author hongchen
+     * @Description 通过用户名查找订单列表
+     * @Date 12:09 2020/4/29
+     * @param username
+     * @return java.util.List<com.changgou.order.pojo.Order>
+     **/
+    @GetMapping("/findByUsername/{username}")
+    public Result<List<Order>> findByUsername(@PathVariable(value = "username") String username) {
+        List<Order> list = orderService.findByUsername(username);
+        return new Result(true, StatusCode.OK, "查询用户订单列表成功", list);
+    }
+
     /***
      * Order分页条件搜索实现
      * @param order

@@ -17,7 +17,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  **/
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(basePackages = "com.changgou.userCenter.feign")
+@EnableFeignClients(basePackages = "com.changgou.order.feign")
 public class UserCenterApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserCenterApplication.class, args);

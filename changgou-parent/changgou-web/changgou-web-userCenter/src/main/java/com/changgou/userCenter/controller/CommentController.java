@@ -1,4 +1,4 @@
-package com.changgou.userCenter;/**
+package com.changgou.userCenter.controller;/**
  * @author hongchen
  * @date 2020/4/28 16:58
  */

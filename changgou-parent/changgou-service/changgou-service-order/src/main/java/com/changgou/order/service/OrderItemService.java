@@ -8,6 +8,14 @@ import java.util.List;
  * @Date 2019/6/14 0:16
  *****/
 public interface OrderItemService {
+    /**
+     * @author hongchen
+     * @Description 根据订单id查询订单详情列表
+     * @Date 12:33 2020/4/29
+     * @param orderId
+     * @return java.util.List<com.changgou.order.pojo.OrderItem>
+     **/
+    List<OrderItem> findByOrderId(String orderId);
 
     /***
      * OrderItem多条件分页查询
